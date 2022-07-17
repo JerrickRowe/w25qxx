@@ -370,7 +370,7 @@ uint8_t w25qxx_register_test(w25qxx_type_t type, w25qxx_interface_t interface, w
         w25qxx_interface_debug_print("w25qxx: w25qxx_set_status2/w25qxx_get_status2 test.\n");
         
         /* set status2 */
-        res = w25qxx_set_status2(&gs_handle, 0x02);
+        res = w25qxx_set_status2(&gs_handle, 0x00);
         if (res != 0)
         {
             w25qxx_interface_debug_print("w25qxx: set status2 failed.\n");
